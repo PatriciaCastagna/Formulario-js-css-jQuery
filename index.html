@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href="style.css"
+
+    //<title> </title>
+    <script type="text/javascript" src="src/js/jquery.js"></script>
+    <script type="text/javascript" src="src/js/functions.js"></script>
+    
+</head>
+<body>
+    <form>
+        <div>
+            <h1 id="titulo"> Cadastro do Aluno</h1>
+
+
+        </div>
+
+    <div class="campo">
+    
+        <label>Insira o nome</label>
+        <input type="text" id="nome"><br><br>
+        <label>Insira o Nif</label>
+        <input type="number" id="nif"><br><br>
+        <label>Insira a morada</label>
+        <input type="text" id="morada"><br><br>
+        <label>Insira a idade</label>
+        <input type="number" id="idade"><br><br>
+        <label>Insira o telefone</label>
+        <input type="number" id="telefone"><br><br>
+        <select id="works"></select>
+        <button type="button" onclick="registraParticipante()">Registro</button>
+	</form>
+
+
+
+    </div>
+
+
+
+    <div class="campo">
+
+        <button type="button" id="btn" onclick="listagem()">Lista de Participantes</button>
+<br><br>
+	<select id="works2" onchange="filtragem(this.value)">
+			
+	</select>
+
+	<table class="hide" id = "tableParticipantes">
+		<thead>
+			<tr>
+				<th>NIF</th>
+				<th>Nome</th>
+				<th>Morada</th>
+				<th>idade</th>
+				<th>Telefone</th>
+				<th>Workshop</th>
+			</tr>
+		</thead>
+		<tbody id ="tabelaInscritos">
+			
+		</tbody>
+	</table>
+
+</body>
+</html>
+
+
+       
+
+    </div>    
+
+
+
+
+    
+</body>
+</html>
